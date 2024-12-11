@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+  width: 44.5%;
+  top: -65%;
+  right: -45%;
+  z-index: 4;
+}
+
+.slideImage {
+  width: 675px;
+  height: 370px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+img {
+  transition: opacity 0.5s ease;
+}

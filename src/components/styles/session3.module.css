@@ -1,0 +1,126 @@
+.services {
+  width: 100%;
+  height: 100vh;
+}
+
+.bgGradian {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.bgGradian:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(38, 44, 65, 1) 0%,
+    rgba(39, 49, 71, 0.7) 100%
+  );
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  transform: translate(0%, -100%);
+  color: white;
+  z-index: 4;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 6%;
+  margin-bottom: 30px;
+}
+
+.serviceList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0 20px 0 0;
+}
+
+.arrowImg {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: aqua;
+  transition: transform 0.7s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.arrowImg:hover {
+  transform: scale(1.1);
+}
+
+.serviceList p {
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.next {
+  background-color: #007bff;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+}
+
+.button {
+  width: 290px;
+  height: 60px;
+  border-radius: 40px;
+  border: none;
+  padding: 14px 20px;
+  background-color: rgba(241, 75, 35, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: rgba(241, 75, 35, 0.4);
+}
+
+.iconUpRight {
+  width: 40px;
+  height: 40px;
+}
